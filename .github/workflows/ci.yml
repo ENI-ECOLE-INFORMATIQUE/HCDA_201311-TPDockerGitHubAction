@@ -12,7 +12,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.1'
-          extensions: mbstring, xml, ctype, iconv, intl, pdo_sqllite, dom, filter, gd, json,libxml
+          extensions: mbstring, xml, ctype, iconv, intl, pdo_sqllite, dom, filter, gd, json, libxml
   build:
     needs: test
     runs-on: ubuntu-latest
