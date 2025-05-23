@@ -20,7 +20,7 @@ jobs:
       - name: Mon Premier Job
         run: echo "Démarrage du job"
       - name: Checkout code
-        uses: action/checkout@v2
+        uses: actions/checkout@v2
       - name: Build Docker image
         run: docker build . --file Dockerfile --tag demo-app:$(date+%s)
       - uses: KengoTODA/actions-setup-docker-compose@v1
