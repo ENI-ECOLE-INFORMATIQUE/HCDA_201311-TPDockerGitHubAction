@@ -22,7 +22,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Build Docker image
-        run: docker build . --file Dockerfile --tag demo-app:$(date+%s)
+        run: docker build . --file Dockerfile --tag demo-app:$(date +%s)
       - uses: KengoTODA/actions-setup-docker-compose@v1
         with:
           version: '2.14.2'
